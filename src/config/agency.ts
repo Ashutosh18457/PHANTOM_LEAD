@@ -9,7 +9,7 @@ export const AGENCY_CONFIG = {
   AGENCY_NAME: "Auren Digital",
   TAGLINE: "We Turn Vision Into Digital Excellence.",
   HERO_HEADLINE: "Your Vision. Our Digital Craft.",
-  SUBTITLE: "We design and develop high-performing websites and digital experiences that help ambitious businesses stand out, earn trust, and grow.",
+  SUBTITLE: "We design and develop premium websites that help businesses build trust, stand out, and grow.",
   
   PRIMARY_CTA: "Start Your Project",
   SECONDARY_CTA: "Explore Our Work",

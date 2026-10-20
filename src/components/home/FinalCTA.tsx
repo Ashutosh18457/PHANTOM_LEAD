@@ -32,7 +32,7 @@ export const FinalCTA: React.FC = () => {
           </Link>
 
           <a
-            href={getWhatsAppChatUrl("Hi Auren Digital, I'd like to discuss a project enquiry with your team.")}
+            href={getWhatsAppChatUrl(`Hi ${AGENCY_CONFIG.AGENCY_NAME}, I'd like to discuss a project enquiry with your team.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#1A1C21] hover:bg-[#25D366] text-white hover:text-[#101114] border border-[#2C2E35] text-xs font-bold tracking-wider uppercase transition-all duration-200 rounded-xs btn-magnetic"

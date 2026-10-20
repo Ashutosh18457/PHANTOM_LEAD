@@ -1,6 +1,8 @@
 import React from "react";
 import { SEO } from "../components/layout/SEO";
 import { AGENCY_CONFIG } from "../config/agency";
+import { WhyChooseUs } from "../components/home/WhyChooseUs";
+import { ProcessSection } from "../components/home/ProcessSection";
 import { FinalCTA } from "../components/home/FinalCTA";
 
 export const AboutPage: React.FC = () => {
@@ -110,6 +112,12 @@ export const AboutPage: React.FC = () => {
 
         </div>
       </section>
+
+      {/* Why Clients Choose Auren Digital */}
+      <WhyChooseUs />
+
+      {/* 7-Step Delivery Process */}
+      <ProcessSection />
 
       <FinalCTA />
     </div>

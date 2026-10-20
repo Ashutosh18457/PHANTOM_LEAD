@@ -49,14 +49,14 @@ export const ServicesSection: React.FC = () => {
           </Link>
         </div>
 
-        {/* 8 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {SERVICES_DATA.map((service, index) => {
+        {/* 6 Core Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {SERVICES_DATA.slice(0, 6).map((service, index) => {
             const Icon = iconMap[service.iconName] || Briefcase;
             return (
               <div
                 key={service.id}
-                className="bg-white p-7 rounded-xs border border-[#E8E6E1] hover:border-[#C5A572] transition-all duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
+                className="bg-white p-8 rounded-xs border border-[#E8E6E1] hover:border-[#C5A572] transition-all duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
               >
                 <div>
                   {/* Top Bar with Number and Icon */}

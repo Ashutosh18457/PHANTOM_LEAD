@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { SEO } from "../components/layout/SEO";
 import { AGENCY_CONFIG } from "../config/agency";
 import { getWhatsAppChatUrl } from "../utils/whatsapp";
+import { FAQSection } from "../components/home/FAQSection";
 import { 
   MessageCircle, 
   Mail, 
@@ -251,7 +252,7 @@ export const ContactPage: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 70665 93251"
+                        placeholder={AGENCY_CONFIG.AGENCY_WHATSAPP_DISPLAY}
                         className="w-full px-4 py-3 text-sm rounded-xs border border-[#E8E6E1] bg-[#F7F5F0] focus:bg-white focus:border-[#C5A572] focus:outline-hidden transition-colors"
                       />
                     </div>
@@ -310,6 +311,9 @@ export const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Frequently Asked Questions */}
+      <FAQSection />
     </div>
   );
 };

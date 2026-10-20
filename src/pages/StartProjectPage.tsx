@@ -408,7 +408,7 @@ export const StartProjectPage: React.FC = () => {
                         type="tel"
                         value={formData.whatsappNumber}
                         onChange={(e) => handleInputChange("whatsappNumber", e.target.value)}
-                        placeholder="+91 70665 93251"
+                        placeholder={AGENCY_CONFIG.AGENCY_WHATSAPP_DISPLAY}
                         className={`w-full px-4 py-3 text-sm rounded-xs border bg-[#F7F5F0] focus:bg-white focus:outline-hidden transition-colors ${
                           errors.whatsappNumber ? "border-red-500" : "border-[#E8E6E1] focus:border-[#C5A572]"
                         }`}
