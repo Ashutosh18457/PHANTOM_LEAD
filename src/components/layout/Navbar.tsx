@@ -17,11 +17,6 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile drawer on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
-
   const navLinks = [
     { name: "Work", path: "/work" },
     { name: "Services", path: "/services" },
@@ -103,6 +98,7 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => setIsOpen(false)}
                 className={`py-2 text-base font-medium px-2 rounded-xs transition-colors ${
                   isActive(link.path)
                     ? "bg-[#E8E6E1]/70 text-[#101114] font-semibold"
@@ -115,6 +111,7 @@ export const Navbar: React.FC = () => {
             <div className="pt-3 border-t border-[#E8E6E1]">
               <Link
                 to="/start-project"
+                onClick={() => setIsOpen(false)}
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 text-xs font-semibold uppercase tracking-wider text-white bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] transition-colors rounded-xs shadow-xs"
               >
                 <span>{AGENCY_CONFIG.PRIMARY_CTA}</span>

@@ -5,9 +5,9 @@ import { AGENCY_CONFIG } from "../../config/agency";
 import { getWhatsAppChatUrl } from "../../utils/whatsapp";
 import { AurenLogo } from "../ui/AurenLogo";
 
-export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+const CURRENT_YEAR = new Date().getFullYear();
 
+export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#101114] text-[#898B91] pt-16 pb-12 border-t border-[#22252C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,7 +145,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#898B91]">
           <div>
-            © {currentYear} {AGENCY_CONFIG.AGENCY_NAME}. All rights reserved.
+            © {CURRENT_YEAR} {AGENCY_CONFIG.AGENCY_NAME}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">
