@@ -69,7 +69,7 @@ export const AboutPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="lg:col-span-6 bg-white p-8 rounded-xs border border-[#E8E6E1] space-y-6 shadow-2xs">
+            <div className="lg:col-span-6 bg-white p-6 sm:p-8 rounded-xs border border-[#E8E6E1] space-y-6 shadow-2xs">
               <h3 className="font-['Manrope'] font-bold text-lg text-[#101114]">
                 What We Reject vs. What We Deliver
               </h3>
@@ -94,7 +94,7 @@ export const AboutPage: React.FC = () => {
               {values.map((v, idx) => (
                 <div
                   key={idx}
-                  className="bg-white p-8 rounded-xs border border-[#E8E6E1] space-y-3 shadow-2xs"
+                  className="bg-white p-6 sm:p-8 rounded-xs border border-[#E8E6E1] space-y-3 shadow-2xs"
                 >
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-[#C5A572]"></span>

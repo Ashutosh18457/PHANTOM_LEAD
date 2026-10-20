@@ -56,7 +56,7 @@ export const ServicesSection: React.FC = () => {
             return (
               <div
                 key={service.id}
-                className="bg-white p-8 rounded-xs border border-[#E8E6E1] hover:border-[#C5A572] transition-all duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
+                className="bg-white p-6 sm:p-8 rounded-xs border border-[#E8E6E1] hover:border-[#C5A572] transition-all duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
               >
                 <div>
                   {/* Top Bar with Number and Icon */}

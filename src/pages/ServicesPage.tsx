@@ -63,7 +63,7 @@ export const ServicesPage: React.FC = () => {
               <div
                 key={service.id}
                 id={service.id}
-                className="bg-white p-8 sm:p-12 rounded-xs border border-[#E8E6E1] shadow-2xs scroll-mt-24"
+                className="bg-white p-5 sm:p-10 rounded-xs border border-[#E8E6E1] shadow-2xs scroll-mt-24"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                   

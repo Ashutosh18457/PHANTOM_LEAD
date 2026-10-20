@@ -231,8 +231,8 @@ export const StartProjectPage: React.FC = () => {
                         : "border-[#E8E6E1] text-[#A6A8AE]"
                     }`}
                   >
-                    <div className="flex items-center gap-1.5">
-                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono font-bold ${
+                    <div className="flex items-center justify-center sm:justify-start gap-1.5">
+                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono font-bold shrink-0 ${
                         isCurrent
                           ? "bg-[#C5A572] text-[#101114]"
                           : isCompleted
@@ -251,7 +251,7 @@ export const StartProjectPage: React.FC = () => {
         )}
 
         {/* Form Container */}
-        <div className="bg-white p-6 sm:p-10 rounded-xs border border-[#E8E6E1] shadow-sm">
+        <div className="bg-white p-4 sm:p-10 rounded-xs border border-[#E8E6E1] shadow-sm">
           
           {/* SUCCESS CONFIRMATION STATE */}
           {isSuccess ? (
@@ -836,12 +836,12 @@ export const StartProjectPage: React.FC = () => {
               )}
 
               {/* Form Navigation Controls */}
-              <div className="pt-8 border-t border-[#F0EEE9] flex items-center justify-between">
+              <div className="pt-8 border-t border-[#F0EEE9] flex items-center justify-between gap-3">
                 {currentStep > 1 ? (
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xs border border-[#D5D2CB] bg-white text-xs font-semibold uppercase tracking-wider text-[#101114] hover:bg-[#F7F5F0] transition-colors cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 min-h-[44px] rounded-xs border border-[#D5D2CB] bg-white text-xs font-semibold uppercase tracking-wider text-[#101114] hover:bg-[#F7F5F0] transition-colors cursor-pointer"
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
                     <span>Back</span>
@@ -854,7 +854,7 @@ export const StartProjectPage: React.FC = () => {
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="inline-flex items-center gap-2 px-7 py-3 bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer shadow-xs"
+                    className="inline-flex items-center justify-center gap-2 px-7 py-3 min-h-[44px] bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer shadow-xs"
                   >
                     <span>Continue</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -863,7 +863,7 @@ export const StartProjectPage: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer shadow-md disabled:opacity-50"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-3.5 min-h-[44px] bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer shadow-md disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <span>Sending enquiry...</span>

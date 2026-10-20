@@ -146,12 +146,12 @@ export const FeaturedWork: React.FC = () => {
       {/* Case Study Detail Modal */}
       {activeModalProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fadeIn">
-          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-xs border border-[#E8E6E1] p-6 sm:p-8 shadow-2xl">
+          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-xs border border-[#E8E6E1] p-4 sm:p-8 shadow-2xl">
             {/* Close Button */}
             <button
               type="button"
               onClick={() => setActiveModalProject(null)}
-              className="absolute top-5 right-5 p-2 rounded-xs text-[#898B91] hover:text-[#101114] hover:bg-[#F7F5F0] transition-colors"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 p-2 rounded-xs text-[#898B91] hover:text-[#101114] hover:bg-[#F7F5F0] transition-colors min-w-[40px] min-h-[40px] flex items-center justify-center cursor-pointer z-10"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />

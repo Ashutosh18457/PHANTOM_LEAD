@@ -48,13 +48,13 @@ export const WorkPage: React.FC = () => {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex flex-wrap gap-2 pt-8 mt-8 border-t border-[#E8E6E1]">
+          <div className="flex flex-wrap gap-2 pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-[#E8E6E1]">
             {filterCategories.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setActiveFilter(cat.id)}
-                className={`px-4 py-2 rounded-xs text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xs text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                   activeFilter === cat.id
                     ? "bg-[#101114] text-white shadow-xs"
                     : "bg-[#F7F5F0] text-[#52555F] hover:bg-[#EFECE6] border border-[#E8E6E1]"
@@ -166,11 +166,11 @@ export const WorkPage: React.FC = () => {
       {/* Case Study Modal */}
       {selectedCase && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fadeIn">
-          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-xs border border-[#E8E6E1] p-6 sm:p-8 shadow-2xl">
+          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-xs border border-[#E8E6E1] p-4 sm:p-8 shadow-2xl">
             <button
               type="button"
               onClick={() => setSelectedCase(null)}
-              className="absolute top-5 right-5 p-2 rounded-xs text-[#898B91] hover:text-[#101114] hover:bg-[#F7F5F0]"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 p-2 rounded-xs text-[#898B91] hover:text-[#101114] hover:bg-[#F7F5F0] transition-colors min-w-[40px] min-h-[40px] flex items-center justify-center cursor-pointer z-10"
               aria-label="Close"
             >
               <X className="w-5 h-5" />

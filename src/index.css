@@ -47,17 +47,45 @@
   background: #898B91;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 * {
   box-sizing: border-box;
+}
+
+/* Prevent iOS Safari auto-zoom on input focus by ensuring >= 16px on mobile */
+@media screen and (max-width: 640px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Touch action and tap highlight optimization */
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* Subtle magnetic button lift */
 .btn-magnetic {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.btn-magnetic:hover {
-  transform: translateY(-1.5px);
-}
-.btn-magnetic:active {
-  transform: translateY(0.5px);
+@media (hover: hover) and (pointer: fine) {
+  .btn-magnetic:hover {
+    transform: translateY(-1.5px);
+  }
+  .btn-magnetic:active {
+    transform: translateY(0.5px);
+  }
 }

@@ -103,7 +103,7 @@ export const ContactPage: React.FC = () => {
             <div className="lg:col-span-5 space-y-8">
               
               {/* WhatsApp Quick Action Card */}
-              <div className="bg-[#101114] text-white p-8 rounded-xs shadow-md space-y-4 border border-[#22252C]">
+              <div className="bg-[#101114] text-white p-6 sm:p-8 rounded-xs shadow-md space-y-4 border border-[#22252C]">
                 <div className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wider text-[#25D366]">
                   <MessageCircle className="w-4 h-4" />
                   <span>Fastest Response</span>
@@ -119,7 +119,7 @@ export const ContactPage: React.FC = () => {
                     href={getWhatsAppChatUrl("Hello Auren Digital, I'd like to ask a question about web development.")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-[#101114] font-bold text-xs uppercase tracking-wider rounded-xs transition-colors btn-magnetic w-full justify-center"
+                    className="inline-flex items-center gap-2 px-6 py-3.5 min-h-[44px] bg-[#25D366] hover:bg-[#20BD5A] text-[#101114] font-bold text-xs uppercase tracking-wider rounded-xs transition-colors btn-magnetic w-full justify-center"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>Open WhatsApp ({AGENCY_CONFIG.AGENCY_WHATSAPP_DISPLAY})</span>
@@ -128,7 +128,7 @@ export const ContactPage: React.FC = () => {
               </div>
 
               {/* General Details Box */}
-              <div className="bg-white p-8 rounded-xs border border-[#E8E6E1] space-y-6 shadow-2xs">
+              <div className="bg-white p-6 sm:p-8 rounded-xs border border-[#E8E6E1] space-y-6 shadow-2xs">
                 <h4 className="font-['Manrope'] font-bold text-base text-[#101114]">
                   Agency Contact Details
                 </h4>
@@ -165,7 +165,7 @@ export const ContactPage: React.FC = () => {
             </div>
 
             {/* Right: Contact Form */}
-            <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-xs border border-[#E8E6E1] shadow-2xs">
+            <div className="lg:col-span-7 bg-white p-5 sm:p-10 rounded-xs border border-[#E8E6E1] shadow-2xs">
               <h3 className="font-['Manrope'] text-2xl font-bold text-[#101114] mb-2">
                 Send a Message
               </h3>
@@ -291,7 +291,7 @@ export const ContactPage: React.FC = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer disabled:opacity-50"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 min-h-[44px] bg-[#101114] hover:bg-[#C5A572] hover:text-[#101114] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors btn-magnetic cursor-pointer disabled:opacity-50"
                     >
                       {loading ? (
                         <span>Sending message...</span>

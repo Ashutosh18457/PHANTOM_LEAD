@@ -39,10 +39,10 @@ export const FAQSection: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full py-4.5 px-6 text-left flex items-center justify-between gap-4 focus:outline-hidden hover:bg-[#EFECE6]/60 transition-colors"
+                  className="w-full py-4 px-4 sm:px-6 text-left flex items-center justify-between gap-4 focus:outline-hidden hover:bg-[#EFECE6]/60 transition-colors cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-['Manrope'] font-bold text-base text-[#101114]">
+                  <span className="font-['Manrope'] font-bold text-sm sm:text-base text-[#101114]">
                     {item.question}
                   </span>
                   <ChevronDown
@@ -53,7 +53,7 @@ export const FAQSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-[#52555F] leading-relaxed border-t border-[#E8E6E1]/60 bg-white animate-fadeIn">
+                  <div className="px-4 sm:px-6 pb-5 pt-2 text-xs sm:text-sm text-[#52555F] leading-relaxed border-t border-[#E8E6E1]/60 bg-white animate-fadeIn">
                     {item.answer}
                   </div>
                 )}

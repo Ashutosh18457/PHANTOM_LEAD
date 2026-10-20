@@ -21,7 +21,7 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-['Manrope'] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#101114] tracking-tight leading-[1.12]">
+            <h1 className="font-['Manrope'] text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#101114] tracking-tight leading-[1.14]">
               Your Vision. <br className="hidden sm:inline" />
               <span className="relative inline-block">
                 <span className="relative z-10 text-[#101114]">Our Digital Craft.</span>
@@ -92,7 +92,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* Live Image Asset inside Browser */}
-                <div className="relative aspect-4/3 bg-[#F7F5F0] overflow-hidden group">
+                <div className="relative aspect-16/10 sm:aspect-4/3 bg-[#F7F5F0] overflow-hidden group">
                   <img
                     src="/images/hero-showcase.jpg"
                     alt="Editorial web design showcase by Auren Digital"

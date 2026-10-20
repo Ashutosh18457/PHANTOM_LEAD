@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-xs text-[#101114] hover:bg-[#E8E6E1]/60 focus:outline-hidden"
+          className="md:hidden p-2 rounded-xs text-[#101114] hover:bg-[#E8E6E1]/60 focus:outline-hidden min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
