@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-bg: #F7F5F0;
+  --color-warm-surface: #FFFFFF;
+  --color-warm-muted: #EFECE6;
+  --color-warm-card: #FFFFFF;
+  --color-warm-border: #E8E6E1;
+  --color-warm-border-strong: #D5D2CB;
+  
+  --color-ink-primary: #101114;
+  --color-ink-secondary: #2C2E35;
+  --color-ink-muted: #898B91;
+  --color-ink-subtle: #A6A8AE;
+  
+  --color-accent-gold: #C5A572;
+  --color-accent-gold-hover: #B3925F;
+  --color-accent-gold-subtle: rgba(197, 165, 114, 0.12);
+  --color-accent-dark: #101114;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #101114;
+  background-color: #F7F5F0;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5D2CB;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #898B91;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Subtle magnetic button lift */
+.btn-magnetic {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-magnetic:hover {
+  transform: translateY(-1.5px);
+}
+.btn-magnetic:active {
+  transform: translateY(0.5px);
+}
